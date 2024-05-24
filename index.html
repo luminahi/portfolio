@@ -20,12 +20,10 @@
     </header>
 
     <main>
-      <section id="about">
+      <section id="about" class="container">
         <div>
           <h2>Hello, I am Luminahi</h2>
-          <p>
-            a Web Developer passionate about Back-end adventuring in Front-end
-          </p>
+          <p>a Back-end Web Developer trying to create a responsive website</p>
         </div>
       </section>
 
@@ -34,30 +32,34 @@
 
         <div class="projects-container">
           <article class="project">
-            <h3>Twitter Clone</h3>
-            <p>
-              A simple php project I developed using Laravel, the used database
-              is MariaDB.
-            </p>
-            <picture>
-              <img src />
-            </picture>
-            <a href="#">Twitter Clone</a>
+            <div class="project-info">
+              <h3>Twitter Clone</h3>
+              <p>A simple php project I developed using Laravel and MariaDB.</p>
+            </div>
+            <img
+              class="project-image"
+              srcset="images/pic-360w.jpg"
+              alt="twitter clone project"
+            />
           </article>
 
           <article class="project">
-            <h3>Game Rate API</h3>
-            <p>
-              An API to register games and rate whatever game is already
-              registered. I used Node.js, Express.js, SQLite3 and Jest.
-            </p>
-            <a href="#">Game Rate API</a>
+            <div class="project-info">
+              <h3>Game Rate API</h3>
+              <p>
+                An API to register games and rate them. Implemented with
+                Node.js, Express.js, SQLite3 and Jest.
+              </p>
+            </div>
+            <img class="project-image" srcset="images/pic-360w.jpg" alt="api" />
           </article>
 
           <article class="project">
-            <h3>TicTacToe</h3>
-            <p>A tic tac toe game developed using React</p>
-            <a href="#">TicTacToe</a>
+            <div class="project-info">
+              <h3>TicTacToe</h3>
+              <p>A tic tac toe game developed using React.</p>
+            </div>
+            <img srcset="images/pic-360w.jpg" alt="twitter clone project" />
           </article>
         </div>
       </section>
@@ -89,11 +91,12 @@
       </section>
 
       <section id="contact" class="container">
-        <h2 class="container-title">Reach me on</h2>
+        <h2 class="container-title">Reach me on...</h2>
         <div class="contact-links">
           <a class="contact" href="https://github.com/luminahi" target="_blank"
             >github</a
           >
+
           <a
             class="contact"
             href="https://www.linkedin.com/in/luminahi"
