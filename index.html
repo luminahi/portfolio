@@ -11,10 +11,10 @@
     <header>
       <nav id="navbar">
         <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -22,7 +22,7 @@
     <main>
       <section id="about" class="container">
         <div>
-          <h2>Hello, I am Luminahi</h2>
+          <h2>Hello, I am Alex Lima</h2>
           <p>a Back-end Web Developer trying to create a responsive website</p>
         </div>
       </section>
@@ -33,7 +33,7 @@
         <div class="projects-container">
           <article class="project">
             <div class="project-info">
-              <h3>Twitter Clone</h3>
+              <a href=""><h3>Twitter Clone</h3></a>
               <p>A simple php project I developed using Laravel and MariaDB.</p>
             </div>
             <img
@@ -45,7 +45,7 @@
 
           <article class="project">
             <div class="project-info">
-              <h3>Game Rate API</h3>
+              <a href=""><h3>Game Rate API</h3></a>
               <p>
                 An API to register games and rate them. Implemented with
                 Node.js, Express.js, SQLite3 and Jest.
@@ -56,10 +56,14 @@
 
           <article class="project">
             <div class="project-info">
-              <h3>TicTacToe</h3>
+              <a href=""><h3>TicTacToe</h3></a>
               <p>A tic tac toe game developed using React.</p>
             </div>
-            <img srcset="images/pic-360w.jpg" alt="twitter clone project" />
+            <img
+              class="project-image"
+              srcset="images/pic-360w.jpg"
+              alt="twitter clone project"
+            />
           </article>
         </div>
       </section>
@@ -92,18 +96,17 @@
 
       <section id="contact" class="container">
         <h2 class="container-title">Reach me on...</h2>
-        <div class="contact-links">
-          <a class="contact" href="https://github.com/luminahi" target="_blank"
-            >github</a
-          >
+        <ul class="contact-list">
+          <li class="contact-link">
+            <a href="https://github.com/luminahi" target="_blank">github</a>
+          </li>
 
-          <a
-            class="contact"
-            href="https://www.linkedin.com/in/luminahi"
-            target="_blank"
-            >linkedin</a
-          >
-        </div>
+          <li class="contact-link">
+            <a href="https://www.linkedin.com/in/luminahi" target="_blank"
+              >linkedin</a
+            >
+          </li>
+        </ul>
       </section>
     </main>
 
