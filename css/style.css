@@ -1,8 +1,10 @@
 :root {
-  --primary-color: #e9d758;
-  --secondary-color: #297373;
-  --tertiary-color: #ff8552;
-  --quaternary-color: #e6e6e6;
+  /* onyx palette */
+  --color-one: #161716;
+  --color-two: #242726;
+  --color-three: #353a3a;
+  --color-four: #414747;
+  --color-five: #585858;
 }
 
 * {
@@ -23,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 html {
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
@@ -35,32 +41,36 @@ html {
 }
 
 .container-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
   padding-block: 1rem;
+  color: white;
 }
 
 /* HEADER START */
 
 header {
-  background-color: var(--primary-color);
+  background-color: var(--color-one);
+  position: fixed;
+  width: 100vw;
+  opacity: 0.8;
 }
 
 #navbar .nav-list {
   height: 4rem;
   display: flex;
-  list-style: none;
   justify-content: right;
+  padding-inline: 1.5rem;
   align-items: center;
 }
 
-#navbar .nav-list li a {
+#navbar .nav-list .nav-item a {
   display: block;
   height: 4rem;
   line-height: 4rem;
-  border-left: 3px solid black;
-  border-radius: 1rem;
-  padding-inline: 1rem;
+  padding-inline: 0.5rem;
+  font-weight: bold;
+  color: white;
 }
 
 /* HEADER END */
@@ -68,12 +78,13 @@ header {
 /* ABOUT START */
 
 #about {
-  background-color: var(--tertiary-color);
+  background-image: linear-gradient(var(--color-one), var(--color-two));
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: white;
 }
 
 /* ABOUT END */
@@ -81,7 +92,7 @@ header {
 /* PROJECTS START */
 
 #projects {
-  background-color: var(--quaternary-color);
+  background-image: linear-gradient(var(--color-two), var(--color-three));
 }
 
 #projects .projects-container {
@@ -101,19 +112,26 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary-color);
+  background-color: white;
   height: 100px;
   border-radius: 1rem 1rem 0 0;
+  border: 2px solid black;
   padding: 1rem;
   text-align: center;
+  box-shadow: 8px 8px;
+}
+
+#projects a {
+  color: black;
 }
 
 #projects .project-image {
   width: 360px;
   height: 240px;
-  background-color: black;
   object-fit: cover;
+  border: 2px solid black;
   border-radius: 0 0 1rem 1rem;
+  box-shadow: 8px 8px;
 }
 
 /* PROJECTS END */
@@ -121,7 +139,8 @@ header {
 /* SKILLS START */
 
 #skills {
-  background-color: var(--secondary-color);
+  background-image: linear-gradient(var(--color-three), var(--color-four));
+  background-color: var(--color-two);
 }
 
 #skills .skill-list {
@@ -130,7 +149,15 @@ header {
   justify-content: center;
   flex-flow: row wrap;
   gap: 1rem;
-  list-style: none;
+}
+
+#skills .skill-list .skill {
+  color: white;
+  border-radius: 1rem 1rem 1rem 0;
+  padding: 1rem;
+  border: 2px solid black;
+  font-weight: bold;
+  box-shadow: 8px 8px black;
 }
 
 /* SKILLS END */
@@ -138,7 +165,7 @@ header {
 /* CONTACT START */
 
 #contact {
-  background-color: var(--tertiary-color);
+  background-image: linear-gradient(var(--color-four), var(--color-five));
   height: 100vh;
   display: flex;
   align-items: center;
@@ -146,7 +173,7 @@ header {
   flex-direction: column;
 }
 
-#contact .contact-links {
+#contact .contact-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,23 +181,40 @@ header {
   font-size: 1.5rem;
 }
 
+#contact .contact-list .contact-link a {
+  padding: 1rem;
+  border-radius: 1rem 1rem 1rem 0;
+  border: 2px solid black;
+  font-weight: bold;
+  box-shadow: 8px 8px black;
+  display: flex;
+  color: white;
+}
+
 /* CONTACT END */
 
 /* FOOTER START */
 
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--color-one);
 }
 
 footer div {
+  color: white;
   display: flex;
   justify-content: right;
   height: 3rem;
-  padding-right: 1.5rem;
+  padding-inline: 1.5rem;
+  height: auto;
 }
 
 footer p {
   line-height: 3rem;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
 }
 
 /* FOOTER END */
